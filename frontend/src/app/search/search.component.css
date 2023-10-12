@@ -1,0 +1,45 @@
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.search-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    background-color: #8fbc58;
+}
+
+.circle {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #8fbc58;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle::before, .circle::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.circle::before {
+    transform: rotate(90deg);
+}
+
+.search-result-item:hover{
+    background-color: rgb(242, 242, 242);
+}

@@ -1,0 +1,27 @@
+<!-- search.component.html -->
+
+<div class="container-fluid">
+    <div class="container-box">
+      <div class="search-box">
+        <h2>Search Simulator templates</h2>
+        <p>Search through all the public templates</p>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search" [(ngModel)]="searchQuery" aria-label="Search" aria-describedby="button-addon2" (input)="performSearch()"/>
+        </div>
+        <!--AJAX search-->
+        <div id="search-results">
+          <div *ngFor="let result of searchResults" (click)="handleItemClick(result)">
+            <div class="search-result-item">
+              {{ result.name }} - {{ result.user.username }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Circle with plus sign -->
+  <div class="circle" (click)="goToCreatePage()">
+    <div class="plus">+</div>
+  </div>
+  

@@ -1,0 +1,36 @@
+.profile-image {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .user-info {
+    padding: 20px;
+  }
+  
+  .off-white-background {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .user-info h1,
+  .user-info h2,
+  .user-info pre {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    max-width: 100%;
+    border: 2px solid #ffffff;
+  }
+
+.outer{
+    background-color: #8fbc58;;
+    border-radius: 20px;
+}
+
+.scrollable-content {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 15px;
+}

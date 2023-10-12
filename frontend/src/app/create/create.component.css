@@ -1,0 +1,83 @@
+.left-box {
+    position: relative;
+    background-color: #a0cfd6;;
+    height: 100vh;
+}
+
+.right-box {
+    background-color: #a0cfd6;;
+    padding: 20px;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 0 0 50px 50px;
+    padding: 20px;
+    width: 40vw;
+    height: auto;
+}
+
+.centered-box {
+    position: absolute;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.save-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.Water{fill:#a0cfd6;}
+.LaoPDR{fill:#E89BBD;}
+.Cambodia{fill:#FBD165;}
+.VietNam{fill:#89B8E4;}
+.Thailand{fill:#FFEB64;}
+
+.LaoPDR:hover{fill:#ce7da0;}
+.Cambodia:hover{fill:#d2a239;}
+.VietNam:hover{fill:#6b9bd1;}
+.Thailand:hover{fill:#f9c24d;}
+
+.CountryBound{stroke:#2f2f2f;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;}
+
+
+.tableWQI tbody tr:nth-child(1) {
+    background-color: lightblue;
+}
+.tableWQI tbody tr:nth-child(2) {
+    background-color: lightgreen;
+}
+.tableWQI tbody tr:nth-child(3) {
+    background-color: yellow;
+}
+.tableWQI tbody tr:nth-child(4) {
+    background-color: orange;
+}
+.tableWQI tbody tr:nth-child(5) {
+    background-color: red;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

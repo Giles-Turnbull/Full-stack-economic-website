@@ -1,0 +1,49 @@
+<!--name title-->
+<h2 class="text-center" style="margin-bottom: 10px;">{{ selectedCountry }}</h2> 
+
+<!--data changing options-->
+<form (ngSubmit)="saveData()">
+  <!--pH-->
+  <div class="form-group">
+    <label for="text1">pH (potential of Hydrogen, Target value 6-9)</label>
+    <input type="number" class="form-control" id="text1" [(ngModel)]="pH" name="pH" min="0" max="14" (change)="updateLocalStorage()">
+    (phin)
+  </div>
+  <!--EC-->
+  <div class="form-group">
+    <label for="text2">EC (Electrical Conductivity, Target value <150)</label>
+    <input type="number" class="form-control" id="text2" [(ngModel)]="EC" name="EC" min="0" max="1000" (change)="updateLocalStorage()">
+    (ms/m)
+  </div>
+  <!--NH3-->
+  <div class="form-group">
+    <label for="text3">NH3 (Ammonia, Target value 0.1)</label>
+    <input type="number" class="form-control" id="text3" [(ngModel)]="NH3" name="NH3" min="0" max="15" (change)="updateLocalStorage()">
+    (mg/L)
+  </div>
+  <!--DO-->
+  <div class="form-group">
+    <label for="text4">DO (Dissolved Oxygen, Target value > 5)</label>
+    <input type="number" class="form-control" id="text4" [(ngModel)]="DO" name="DO" min="0" max="20" (change)="updateLocalStorage()">
+    (mg/L)
+  </div>
+  <!--NO2-3-->
+  <div class="form-group">
+    <label for="text5">NO2-3 (Nitrate-Nitrogen, Target value 0.5)</label>
+    <input type="number" class="form-control" id="text5" [(ngModel)]="NO2_3" name="NO2_3" min="0" max="10" (change)="updateLocalStorage()">
+    (mg/L)
+  </div>
+  <!--T_P-->
+  <div class="form-group">
+    <label for="text6">T-P (Total Phosphorus, Target value 0.13)</label>
+    <input type="number" class="form-control" id="text6" [(ngModel)]="T_P" name="T_P" min="0" max="5" (change)="updateLocalStorage()">
+    (mg/L)
+  </div>
+  <div class="cr">All target values given by the Mekong River Commission</div>
+  
+  <!--WQI output value-->
+  <div class="green-box mt-5">
+    <h2>Economic</h2>
+    <p>WQI: {{ wqi }}</p>
+  </div>
+</form>

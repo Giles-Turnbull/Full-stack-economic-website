@@ -1,0 +1,61 @@
+.bg-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Style for the video element */
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style for the mask */
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+/* Style for the caption text */
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 70%;
+}
+
+.bg-image {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.pageHeader {
+    color: #8fbc58;
+    font-family: 'Lora', serif;
+    font-size: 4vw;
+}
+.pageDesc{
+    color: gray;
+    font-family: 'Bebas Neue', sans-serif;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pageDesc2{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
