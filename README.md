@@ -1,4 +1,4 @@
-![image](https://github.com/Giles-Turnbull/Full-stack-economic-website/assets/71279574/1661877a-34bb-4517-9253-6b8228cd9f6a)<h1>Full-stack-economic-website</h1>
+<h1>Full-stack-economic-website</h1>
 
 Full stack website that predicts Water Quality at a given location in the Lower Mekong River Basin. Angular frontend and Django backend. User authentication, RESTful API usage, and database implementation. This website could be used to store, publish, and view WQ data in the designated area.
 
